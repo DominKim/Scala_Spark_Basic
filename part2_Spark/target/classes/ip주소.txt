@@ -1,0 +1,10 @@
+ip주소 : 172.16.40.129
+master : 172.16.40.5
+slave1 : 172.16.40.10
+slave2 : 172.16.40.11
+서브넷마스크 : 255.255.255.0
+라우트 172.16.40.2
+DNS 172.16.40.2
+
+https://itlearningcenter.tistory.com/entry/%E3%80%90VMware%E3%80%91VMware-%ED%99%94%EB%A9%B4%EC%9D%B4-%EC%95%88%EB%82%98%EC%98%A4%EB%8A%94-%EB%AC%B8%EC%A0%9C%EA%B2%80%EC%9D%80-%ED%99%94%EB%A9%B4-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0
+https://kb.vmware.com/s/article/2030543

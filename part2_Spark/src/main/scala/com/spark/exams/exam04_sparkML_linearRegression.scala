@@ -2,7 +2,7 @@ package com.spark.exams
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.ml.regression.LinearRegression
-import org.apache.spark.ml.feature.VectorAssembler // x, y변수 선택
+import org.apache.spark.ml.feature.VectorAssembler
 import org.apache.spark.ml.evaluation.RegressionEvaluator // model 평가 
 
 
@@ -38,6 +38,7 @@ object exam04_sparkML_linearRegression {
     val assemble = new VectorAssembler().setInputCols(Array("iq", "academy", "game", "tv")) // x변수 선택
     .setOutputCol("features") // x변수 → features 지정
     
+    // olld Df
     val data = assemble.transform(score_xy)
     
     // 3. train / test split(80% vs 20%)

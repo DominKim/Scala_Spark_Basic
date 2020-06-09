@@ -40,6 +40,7 @@ object Step02_LInearRegression_csv {
     val assemble = new VectorAssembler().setInputCols(Array("Sepal_Width", "Petal_Length", "Petal_Width")) // x변수 선택
     .setOutputCol("features") // x변수 → features 지정
     
+    // old DF → new DF
     val data = assemble.transform(iris_xy)
     data.show(false)
     // |Sepal_Length|Sepal_Width|Petal_Length|Petal_Width|     features|

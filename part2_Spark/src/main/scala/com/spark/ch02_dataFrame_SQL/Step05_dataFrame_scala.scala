@@ -20,7 +20,7 @@ object Step05_dataFrame_scala {
     val v3 = (1003, 250, 55, 10)
     val v4 = ("kim", 300, 100, 30) // ename, pay, bonus, dno
     
-    // spark 암묵적 변환 방식 : scala collection → DF
+    // spark 암묵적 변환 방식 : scala or RDD ←→ DF
     import spark.implicits._ 
     // scala -> DataFrame
     val emp = List(v1, v2, v3, v4).toDF("eno", "pay", "bonus", "dno")
